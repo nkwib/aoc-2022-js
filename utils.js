@@ -31,3 +31,14 @@ export const getLetterValue = (char) => {
   let value = char.charCodeAt(0);
   return value - (value > 96 ? 96 : 38);
 }
+
+export const oneContainsTheOther = (a, b) => {
+  let aContainsB = a[0] <= b[0] && a[1] >= b[1];
+  let bContainsA = b[0] <= a[0] && b[1] >= a[1];
+  return aContainsB || bContainsA;
+}
+export const oneOverlapsTheOther = (a, b) => {
+  let aOverlapsB = a[0] <= b[1] && a[1] >= b[1];
+  let bOverlapsA = b[0] <= a[1] && b[1] >= a[1];
+  return aOverlapsB || bOverlapsA;
+}

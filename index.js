@@ -1,6 +1,7 @@
 import * as aoc_1 from './day1/solve.js';
 import * as aoc_2 from './day2/solve.js';
 import * as aoc_3 from './day3/solve.js';
+import * as aoc_4 from './day4/solve.js';
 
 console.log("The elf with the most calories is: ", aoc_1.f());
 console.log("The sum of the elves with the most calories is: ", aoc_1.s());
@@ -10,3 +11,6 @@ console.log("Playing as intended by the Elf at Rock, Paper, Scissors will give y
 
 console.log("The sum of priorities of the items type is: ", aoc_3.f());
 console.log("The sum of priorities for the badges is: ", aoc_3.s());
+
+console.log("The pairs that includes the other: ", aoc_4.f());
+console.log("The pairs that overlaps the other: ", aoc_4.s());
